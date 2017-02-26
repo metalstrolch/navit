@@ -1002,8 +1002,11 @@ osm_add_tag(char *k, char *v)
 		relation_add_tag(k,v);
 		return;
 	}
-	if (! strcmp(k,"ele"))
-		level=9;
+	if (! strcmp(k,"ele")){
+		attr_strings_save(attr_string_label, v);
+		level=5;
+		//level=9;
+   }
 	if (! strcmp(k,"time"))
 		level=9;
 	if (! strcmp(k,"created_by"))
