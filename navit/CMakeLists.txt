@@ -217,6 +217,7 @@ endif()
 
 
 add_subdirectory (maptool)
+add_subdirectory (maptool2)
 add_subdirectory (icons)
 add_subdirectory (textures)
 add_subdirectory (maps)
